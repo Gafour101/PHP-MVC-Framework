@@ -18,8 +18,12 @@ use gaf\phpmvc\db\UserModel;
 
 class Application
 {   
-    public static string $ROOT_DIR;
+    const EVENT_BEFORE_REQUEST = "beforeRequest";
+    const EVENT_AFTER_REQUEST = "afterRequest";
 
+    protected array $eventListeners = [];
+
+    public static string $ROOT_DIR;
     public string $layout = 'main';
     public string $userClass;
     public Router $router; // Public property to hold the Router instance
@@ -66,6 +70,7 @@ class Application
 
     public function run() {
         try {
+            $this->triggerEvent(self::EVENT_BEFORE_REQUEST);
             echo $this->router->resolve();
         } catch (\Exception $e) {
             $this->response->setStatusCode($e->getCode());
@@ -107,6 +112,19 @@ class Application
      {
         $this->user = NULL;
         $this->session->remove('user');
+     }
+
+     public function triggerEvent($eventName)
+     {
+        $callbacks = $this->eventListeners[$eventName] ?? [];
+        foreach ($callbacks as $callback) {
+            call_user_func($callback);
+        }
+     }
+
+     public function on($eventName, $callback)
+     {
+        $this->eventListeners[$eventName][] = $callback;
      }
 }
 
