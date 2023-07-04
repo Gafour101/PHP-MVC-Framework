@@ -1,5 +1,5 @@
 <?php 
-    namespace gaf\models;
+    namespace app\models;
 
     use gaf\phpmvc\Model;
     use gaf\phpmvc\db\DbModel;
@@ -9,7 +9,7 @@
         * Class Application
         *
         * @author Gafour Panolong <gafopanolong.gafour@s.msumain.edu.ph>
-        * @package gaf\models
+        * @package app\models
         
     **/
 

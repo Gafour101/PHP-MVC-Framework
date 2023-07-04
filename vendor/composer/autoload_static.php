@@ -16,7 +16,10 @@ class ComposerStaticInit3f06c0acc02a2ce426a9a3d983b8770c
         'g' => 
         array (
             'gaf\\phpmvc\\' => 11,
-            'gaf\\' => 4,
+        ),
+        'a' => 
+        array (
+            'app\\' => 4,
         ),
         'S' => 
         array (
@@ -43,7 +46,7 @@ class ComposerStaticInit3f06c0acc02a2ce426a9a3d983b8770c
         array (
             0 => __DIR__ . '/..' . '/gaf/php-mvc-core',
         ),
-        'gaf\\' => 
+        'app\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',
         ),

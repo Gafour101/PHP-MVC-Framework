@@ -1,7 +1,7 @@
 <?php
 /** User: Gafour Tech **/
 
-namespace gaf\models;
+namespace app\models;
 
 use gaf\phpmvc\Model;
 
@@ -10,7 +10,7 @@ use gaf\phpmvc\Model;
     * Class gaflication
     *
     * @author Gafour Panolong <gafopanolong.gafour@s.msumain.edu.ph>
-    * @package gaf\models
+    * @package app\models
     
 **/
 class ContactForm extends Model

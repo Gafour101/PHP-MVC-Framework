@@ -3,7 +3,7 @@
         'name' => 'gafou/php-mvc-framework',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'f9239246b12dd43e9e2dae4ff4da960076872c80',
+        'reference' => '17aa198bbb9ce693da7223cbf5a0993fc6b61ac5',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -24,7 +24,7 @@
         'gafou/php-mvc-framework' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'f9239246b12dd43e9e2dae4ff4da960076872c80',
+            'reference' => '17aa198bbb9ce693da7223cbf5a0993fc6b61ac5',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

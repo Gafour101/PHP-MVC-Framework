@@ -1,6 +1,6 @@
 <?php 
 
-  use app\core\Application; 
+  use gaf\phpmvc\Application; 
   // echo '<pre>';
   // var_dump($title);
   // echo '</pre>';

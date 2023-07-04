@@ -1,21 +1,21 @@
 <?php
 /** User: Gafour Tech **/
 
-namespace gaf\controllers;
+namespace app\controllers;
 
 use gaf\phpmvc\Application;
 use gaf\phpmvc\Controller;
 use gaf\phpmvc\Request;
 use gaf\phpmvc\Response;
-use gaf\models\User;
-use gaf\models\LoginForm;
+use app\models\User;
+use app\models\LoginForm;
 use gaf\phpmvc\middlewares\AuthMiddleware; // Import the AuthMiddleware class
 /**
 
     * Class Application
     *
     * @author Gafour Panolong <gafopanolong.gafour@s.msumain.edu.ph>
-    * @package gaf\controllers
+    * @package app\controllers
     
 **/
 

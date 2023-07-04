@@ -7,7 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'gaf\\phpmvc\\' => array($vendorDir . '/gaf/php-mvc-core'),
-    'gaf\\' => array($baseDir . '/'),
+    'app\\' => array($baseDir . '/'),
     'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),

@@ -3,7 +3,7 @@
 
 namespace gaf\phpmvc;
 
-use gaf\controllers\SiteController;
+use app\controllers\SiteController;
 use gaf\phpmvc\exception\NotFoundException;
 use gaf\phpmvc\db\Database;
 use gaf\phpmvc\db\UserModel;

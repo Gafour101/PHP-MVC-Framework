@@ -20,7 +20,7 @@ class m0001_initial {
 
     public function down()
     {
-        $db = \gaf\phpmvc\Application::$app->db;
+        $db = \gaf\php\Application::$app->db;
         $SQL = "DROP TABLE users;";
         $db->pdo->exec($SQL);
     }

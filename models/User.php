@@ -1,7 +1,7 @@
 <?php
 /** User: Gafour Tech **/
 
-namespace gaf\models;
+namespace app\models;
 
 use gaf\phpmvc\Model;
 use gaf\phpmvc\DbModel;
@@ -11,7 +11,7 @@ use gaf\phpmvc\db\UserModel;
     * Class gaflication
     *
     * @author Gafour Panolong <gafopanolong.gafour@s.msumain.edu.ph>
-    * @package gaf\models
+    * @package app\models
     
 **/
 

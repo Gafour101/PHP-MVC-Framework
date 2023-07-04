@@ -1,19 +1,19 @@
 <?php
 /** User: Gafour Tech **/
 
-namespace gaf\controllers;
+namespace app\controllers;
 
 use gaf\phpmvc\Application;
 use gaf\phpmvc\Controller;
 use gaf\phpmvc\Request;
 use gaf\phpmvc\Response;
-use gaf\models\ContactForm;
+use app\models\ContactForm;
 /**
 
     * Class Application
     *
     * @author Gafour Panolong <gafopanolong.gafour@s.msumain.edu.ph>
-    * @package gaf\controllers
+    * @package app\controllers
     
 **/
 

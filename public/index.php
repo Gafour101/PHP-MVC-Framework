@@ -1,8 +1,8 @@
 <?php
 /** User: Gafour Tech ...**/
 
-use gaf\controllers\AuthController;
-use gaf\controllers\SiteController;
+use app\controllers\AuthController;
+use app\controllers\SiteController;
 use gaf\phpmvc\Application;
 
 require_once __DIR__.'/../vendor/autoload.php';
@@ -11,7 +11,7 @@ $dotenv->load();
 
 
 $config = [
-    'userClass' => \gaf\models\User::class,
+    'userClass' => \app\models\User::class,
     'db' => [
         'dsn' => $_ENV['DB_DSN'],
         'user' => $_ENV['DB_USER'],
@@ -19,17 +19,17 @@ $config = [
     ]
 ];
 
-$gaf = new Application(dirname(__DIR__), $config);
+$app = new Application(dirname(__DIR__), $config);
 
-$gaf->router->get('/', [SiteController::class,'home']);
-$gaf->router->get('/contact', [SiteController::class,'contact']);
-$gaf->router->post('/contact',[SiteController::class,'contact']);
+$app->router->get('/', [SiteController::class,'home']);
+$app->router->get('/contact', [SiteController::class,'contact']);
+$app->router->post('/contact',[SiteController::class,'contact']);
 
-$gaf->router->get('/login', [AuthController::class,'login']);
-$gaf->router->post('/login', [AuthController::class,'login']);
+$app->router->get('/login', [AuthController::class,'login']);
+$app->router->post('/login', [AuthController::class,'login']);
 
-$gaf->router->get('/register', [AuthController::class,'register']);
-$gaf->router->post('/register', [AuthController::class,'register']);
-$gaf->router->get('/logout', [AuthController::class,'logout']);
-$gaf->router->get('/profile', [AuthController::class,'profile']);
-$gaf->run();
+$app->router->get('/register', [AuthController::class,'register']);
+$app->router->post('/register', [AuthController::class,'register']);
+$app->router->get('/logout', [AuthController::class,'logout']);
+$app->router->get('/profile', [AuthController::class,'profile']);
+$app->run();

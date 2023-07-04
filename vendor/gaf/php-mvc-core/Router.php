@@ -2,6 +2,8 @@
 /** User: Gafour Tech ...**/
 
 namespace gaf\phpmvc;
+
+use app\controllers\SiteController;
 use gaf\phpmvc\exception\NotFoundException;
 /**
 
