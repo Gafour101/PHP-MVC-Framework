@@ -1,0 +1,16 @@
+{
+    "name": "gafou/php-mvc-framework",
+    "autoload": {
+        "psr-4": {
+            "gaf\\": "./"
+        }
+    },
+    "authors": [{
+        "name": "Gafour Panolong",
+        "email": "panolong.gafour@s.msumain.edu.ph"
+    }],
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "gaf/php-mvc-core": "dev-master"
+    }
+}

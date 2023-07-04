@@ -1,0 +1,16 @@
+{
+    "name": "gaf/php-mvc-core",
+    "autoload": {
+        "psr-4": {
+            "gaf\\phpmvc\\": "."
+        }
+    },
+    "authors": [{
+        "name": "Gafourrrr",
+        "email": "panolong.gafour@s.msumain.edu.ph"
+    }],
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "gaf/php-mvc-core": "dev-master"
+    }
+}
