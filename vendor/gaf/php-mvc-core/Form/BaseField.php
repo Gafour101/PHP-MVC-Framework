@@ -37,10 +37,10 @@ abstract class BaseField
     {
         return sprintf('
             <div class="form-group">
-                <label>%s</label>
+                <label class="mysecondary-color fs-5">%s</label>
                 %s
                 <div>
-                    <p style="color: red; font-size: 0.75rem;">%s</p>
+                    <p style="color: red; font-size: 0.90rem;">%s</p>
                 </div>
             </div>
         ',

@@ -58,6 +58,7 @@ class AuthController extends Controller
                 exit;
             }
            
+           
             return $this->render('register', [
                 'model' => $user
             ]);

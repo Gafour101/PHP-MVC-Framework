@@ -43,12 +43,13 @@ class InputField extends BaseField
     }
 
     public function renderInput(): string
-    {   
-        return sprintf('<input type="%s" name="%s" value="%s" class="form-control%s">',
-            $this->type,
-            $this->attribute,
-            $this->model->{$this->attribute},
-            $this->model->hasError($this->attribute) ? ' is_invalid' : '',
-        );
-    }
+{
+    return sprintf(
+        '<input type="%s" name="%s" class="form-control%s myborder-radius p-2 bg-transparent myborder" auto-complete="off" value="%s">',
+        $this->type,
+        $this->attribute,
+        $this->model->hasError($this->attribute) ? ' is-invalid' : '',
+        $this->model->{$this->attribute}
+    );
+}
 }

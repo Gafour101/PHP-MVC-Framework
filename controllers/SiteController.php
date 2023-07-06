@@ -33,7 +33,7 @@ class SiteController extends Controller
         if($request->isPost()) {
             $contact->loadData($request->getBody());
             if ($contact->validate() && $contact->send()) {
-                Application::$app->session->setFlash('success', 'Thanks for contacting us');
+                Application::$app->session->setFlash('success', 'Thanks for contacting us!  ');
                 return $response->redirect('/contact');
             }
         }
