@@ -81,8 +81,8 @@
       color: #0a192f;
     }
     .primary-btn {
-      border-radius:4px;
-      padding: 0 25px;
+      border-radius:12px;
+      padding: 0.50px 15px;
       border-color: #64FFDA;
     }
     .primary-btn:hover {
@@ -127,7 +127,7 @@
       border-radius: 10px;
     }
     .myborder {
-      border: 1px solid #64FFDA;
+      border: 2px solid #64FFDA;
       color: #ccd6f6;
       font-size: 1.5rem;
       padding-left: 10px;
@@ -172,27 +172,29 @@
           <a class="mynav-link <?php echo $this->isPageActive('/contact') ? 'active' : ''; ?>" href="/contact"><h4>Contact</h4></a>
         </li>
         <li class="nav-item mt-2 mr-1">
-          <a class="mynav-link mytertiary-color <?php echo $this->isPageActive('//register') ? 'active' : ''; ?>" href="/register"><h4>Register</h4></a>
+          <a class="mynav-link mytertiary-color <?php echo $this->isPageActive('/register') ? 'active' : ''; ?>" href="/register"><h4>Register</h4></a>
         </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <button type="button" href="/login" class="btn btn-outline-primary primary-btn pt-2 h-100"><a class="nav-link myprimary-color" aria-current="page" href="/login"><h4>Login</h4></a></button>
           </li>
         </ul> 
       <?php else: ?>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-              <a class="mynav-link" aria-current="page" href="/profile">Profile</a>
+          <li class="nav-item mt-2 mr-1">
+              <a class="mynav-link mytertiary-color <?php echo $this->isPageActive('/dashboard') ? 'active' : ''; ?>" aria-current="page" href="/dashboard">Dashboard</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="/logout">Welcome <?php echo Application::$app->user->getDisplayName(); ?>
+          <li class="nav-item mt-2 mr-1">
+              <a class="mynav-link mytertiary-color <?php echo $this->isPageActive('/profile') ? 'active' : ''; ?>" aria-current="page" href="/profile">Profile</a>
+            </li>
+            <li class="nav-item mt-2 mr-1">
+              <a class="nav-link mytertiary-color" aria-current="page" href="/logout"><?php echo Application::$app->user->getDisplayName(); ?>
                 (Logout)
               </a>
             </li>
         </ul>
       <?php endif; ?>
     </div>
-  
-</nav>
+    </nav>
     <div class="container">
       <?php if (Application::$app->session->getFlash('success')): ?>
         <div class="m-lg-2 mt-0 my-fs-6 p-3 myalert myalert-success">

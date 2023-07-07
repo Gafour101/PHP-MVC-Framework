@@ -34,7 +34,7 @@ class AuthController extends Controller
         if($request->isPost()){
             $loginForm->loadData($request->getBody());
             if ($loginForm->validate() && $loginForm->login()) {
-                $response->redirect('/');
+                $response->redirect('/dashboard');
                 return; 
             }
         }
@@ -54,7 +54,7 @@ class AuthController extends Controller
 
             if ($user->validate() && $user->save()) {
                 Application::$app->session->setFlash('success', 'You have been registered!');
-                Application::$app->response->redirect('/');
+                Application::$app->response->redirect('/login');
                 exit;
             }
            
@@ -80,5 +80,10 @@ class AuthController extends Controller
     {   
         
         return $this->render('profile');
+    }
+    public function dashboard()
+    {   
+        
+        return $this->render('dashboard');
     }
 }

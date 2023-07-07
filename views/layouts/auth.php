@@ -123,7 +123,8 @@
       border-radius: 10px;
     }
     .myborder {
-      border: 1px solid #64FFDA;
+
+      border: 2px solid #64FFDA;
       color: #64FFDA;
       font-size: 1.5rem;
       padding-left: 10px;
