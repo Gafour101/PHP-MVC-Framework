@@ -19,12 +19,12 @@ use app\models\ContactForm;
 
 class SiteController extends Controller
 {   
-    public function home()
+    public function home(Request $request, Response $response)
     {   
         $params = [
             'name' => "Gafour Gwapo"
         ];
-        return $this->render('home', $params);
+        return $response->redirect('/login');
     }
 
     public function contact(Request $request, Response $response)

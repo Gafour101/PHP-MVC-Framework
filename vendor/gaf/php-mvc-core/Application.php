@@ -46,6 +46,8 @@ class Application
         $this->request = new Request(); // Initialize a new Request object
         $this->response = new Response(); // Initialize a new Response object
         $this->session = new Session(); // Initialize a new Session object
+
+        
         $this->router = new Router($this->request, $this->response); // Initialize a new Router object
         $this->view = new View(); // Initialize a new View object
 

@@ -15,6 +15,19 @@ namespace gaf\phpmvc;
 
 class Request
 {  
+    public function __construct()
+    {
+        // Generate and store the CSRF token in the session
+        if (!isset($_SESSION['csrf_token'])) {
+            $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+        }
+    }
+
+    public function isAjax()
+    {
+        return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';
+    }
+
     public function getPath()
     {
         $path = $_SERVER['REQUEST_URI'] ?? '/';
@@ -63,5 +76,10 @@ class Request
         }
 
         return $body;
+    }
+
+    public function getCsrfToken()
+    {
+        return $_SESSION['csrf_token'] ?? null;
     }
 }

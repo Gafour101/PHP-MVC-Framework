@@ -37,8 +37,9 @@ abstract class DbModel extends Model
 
         $statement->execute();
         return true;
-        
     }
+
+    
 
     public function findUser($where) // [email => admin@gmail.com, firstname, gafour]
     {

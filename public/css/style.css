@@ -1,0 +1,275 @@
+      /* Custom CSS */
+      /* ... Existing CSS styles ... */
+      
+      @media (max-width: 768px) {
+          /* Adjust styles for smaller screens */
+          .navbar-nav {
+              flex-direction: column;
+          }
+          .navbar-toggler {
+              margin-left: auto;
+              margin-right: 0;
+          }
+          .mvc-head {
+              font-size: auto;
+          }
+      }
+      
+      .myprimary-bg {
+          background-color: #64FFDA !important;
+      }
+      
+      .myprogress {
+          background-color: #323c5a !important;
+      }
+      
+      .navbar-brand {
+          margin-right: auto;
+      }
+      
+      .mynav-link {
+          display: block;
+          padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+          font-size: 1.5rem !important;
+          font-weight: var(--bs-nav-link-font-weight);
+          color: #8892b0;
+          text-decoration: none;
+          background: none;
+          border: 0;
+          transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+      }
+      
+      .mynav-link:hover {
+          color: #64FFDA;
+      }
+      
+      .mynav-link.active {
+          color: #64FFDA;
+      }
+      
+      .navbar-nav.ml-auto {
+          margin-left: auto;
+      }
+      
+      .mynavbar {
+          border-color: #64FFDA !important;
+      }
+      
+      .mr-1 {
+          margin-right: 1rem;
+      }
+      
+      .myprimary-color {
+          color: #64FFDA;
+      }
+      
+      .mynav-bar {
+          margin-right: 20px !important;
+          background-color: rgb(14 26 43 / 99%) !important
+      }
+      
+      .mysecondary-color {
+          color: #ccd6f6;
+      }
+      
+      .mytertiary-color {
+          color: #8892b0;
+      }
+      
+      .mytext-color {
+          color: rgb(136, 146, 176);
+      }
+      
+      .mycard-bg {
+          background-color: #233554;
+      }
+      
+      .my-btn {
+          background-color: #64FFDA;
+          color: #0a192f;
+      }
+      
+      .my-btn:hover {
+          background-color: #64ffdba8 !important;
+          color: #0a192f !important;
+      }
+      
+      .primary-btn {
+          border-radius: 4px;
+          border: 2px solid;
+          border-color: #64FFDA;
+      }
+      
+      .primary-btn:hover {
+          color: #0a192f;
+          background-color: #64FFDA;
+      }
+      
+      .mycontainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          text-align: center;
+      }
+      
+      .welcome-content {
+          margin-top: 4rem;
+      }
+      
+      .my-fs-6 {
+          font-size: 6rem;
+      }
+      
+      .my-fs-5 {
+          font-size: 5rem;
+      }
+      
+      .my-fs-3 {
+          margin-block-start: 0;
+          font-size: 2rem;
+          margin-left: 0;
+      }
+      
+      .my-fs-2 {
+          margin-block-start: 0;
+          font-size: 1.5rem;
+          margin-left: 0;
+      }
+      
+      .align-left {
+          text-align: left;
+      }
+      
+      .ml-2 {
+          margin-left: 2em;
+      }
+      
+      .myborder-radius {
+          border-radius: 5px !important;
+      }
+      
+      .myborder {
+          border: 2px solid #64FFDA;
+          color: #64FFDA;
+          font-size: 1.5rem;
+          padding-left: 10px;
+      }
+      
+      input[type="text"]:focus,
+      input[type="text"]:hover,
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+          color: #ccd6f6;
+      }
+      
+      input[type="email"]:hover,
+      input[type="password"]:hover {
+          color: #64FFDA;
+      }
+      
+      textarea:focus,
+      textarea:focus::placeholder {
+          color: #ccd6f6 !important;
+      }
+      
+      .myalert-success {
+          background-color: #ccd6f6;
+          ;
+          color: #0a192f;
+          font-size: 4rem;
+      }
+      
+      .pillcard {
+          background-color: #64FFDA !important;
+          border-color: #64FFDA !important;
+          color: #0a192f !important;
+          border-radius: 8px !important;
+      }
+      
+      .primarycard {
+          background-color: rgb(23, 42, 69) !important;
+          border-color: rgb(23, 42, 69) !important;
+          color: #0a192f !important;
+          border-radius: 8px !important;
+      }
+      
+      .submit-btn {
+          background-color: transparent !important;
+          border-color: #64FFDA !important;
+          color: #64FFDA !important;
+      }
+      
+      .form-control,
+      .form-select {
+          border-radius: 6px !important;
+          color: #ccd6f6 !important;
+          background-color: #3c5983 !important;
+      }
+      
+      .mybtn-close {
+          color: #172a45 !important;
+      }
+      
+      .mybtn-close .mybtn-close::before {
+          content: "\F623";
+      }
+      /* Styles for the loading icon */
+      /* Styles for the loading overlay */
+      /* Styles for the loading icon */
+      
+      .loading-icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: block;
+          width: 100%;
+          max-width: 100px;
+          /* Hide by default */
+      }
+      
+      .loading-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgb(10, 25, 47);
+          /* Semi-transparent background */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+          /* Ensure the overlay is above other content */
+      }
+      
+      .loading-content {
+          text-align: center;
+          color: white;
+      }
+      
+      .mydropdown {
+          font-size: 10px !important;
+          width: 20px !important;
+      }
+      
+      .scroll-icon {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          color: #3c5983;
+          font-size: 50px;
+          text-decoration: none;
+          transition: color 0.3s ease-in-out;
+          /* Ensure the icons are always on top */
+      }
+      
+      .hidden {
+          display: none;
+      }
+      
+      .scroll-icon:hover {
+          color: #64FFDA;
+      }
